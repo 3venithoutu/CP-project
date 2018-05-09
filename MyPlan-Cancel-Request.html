@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>YAHSAT | My Plan</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+      <!-- Morris -->
+      <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/yahsat-style.css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="y-nav-header nav-header" style="text-align:center;">
+                     <div class="dropdown profile-element">
+                        <span>
+                        <img alt="image" class="img-circle" style="background-color:#ffffff;" src="images/logo.png" />
+                        </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                        </span> <span style="color:#a4c3b7" class="text-muted text-xs block">Rio de Janeiro - RJ</span> </span> </a>
+                     </div>
+                     <div class="logo-element">
+                        IN+
+                     </div>
+                  </li>
+				<li>
+                     <a href="Home.html"><i class="glyphicon glyphicon-home"></i> <span class="nav-label">Home</span></a>
+                  </li>
+                <li>
+                     <a href="MyInvoices.html"><i class="glyphicon glyphicon-usd"></i> <span class="nav-label">My Invoices</span> <span class="fa arrow"></span></a>
+                     <ul class="nav nav-second-level collapse">
+                        <li><a href="BillingAddress.html">Billing address</a></li>
+                        <li><a href="DigitalInvoice.html">Digital invoice</a></li>
+                        <li><a href="DueDate.html">Due date</a></li>
+                        <li><a href="FormOfPayment.html">Form of payment</a></li>
+                        <li><a href="DischargeTerm.html">Discharge term</a></li>
+                     </ul>
+                  </li>
+                <li class="active">
+                     <a href="MyPlan.html"><i class="fa fa-file-text-o"></i> <span class="nav-label">My Plan</span>  </a>
+                  </li>
+                  <li>
+                     <a href="MyCadastre.html"><i class="glyphicon glyphicon-user"></i> <span class="nav-label">My Cadastre</span></a>
+                  </li>
+                  <li>
+                     <a href="MyConsumption.html"><i class="glyphicon glyphicon-stats"></i> <span class="nav-label">My Consumption</span></a>
+                  </li>
+                  <li>
+                     <a href="Attendance.html"><i class="glyphicon glyphicon-headphones"></i> <span class="nav-label">Attendance</span><span class="fa arrow"></span></a>
+                     <ul class="nav nav-second-level collapse">
+                        <li><a href="ContactUs.html">Contact us</a></li>
+                        <li><a href="ProtocolHistory.html">Protocol history</a></li>
+                        <li><a href="ChangeWifiPW.html">Change Wi-Fi Password</a></li>
+                        <li><a href="TechnicalVisits.html">Technical vists</a></li>
+                        <li><a href="TechnicalSupport.html">Technical support</a></li>
+                        <li><a href="Recordings.html">Recordings</a></li>
+                     </ul>
+                  </li>
+            </ul>
+
+        </div>
+    </nav>
+         <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+               <nav class="navbar navbar-static-top gray-bg" role="navigation" style="margin-bottom: 0">
+                  <div class="col-lg-12 navbar-header">
+                     <div class="col-lg-5">
+                        <!-- <label for="sel1">Your installation address</label> -->
+                        <select class="form-control y-headm" id="sel1">
+                           <option>Your installation address</option>
+                           <option>Rua dos Cafezais, 420 apto 242 - 1</option>
+                           <option>Rua dos Cafezais, 420 apto 242 - 2</option>
+                           <option>Rua dos Cafezais, 420 apto 242 - 3</option>
+                        </select>
+                     </div>
+                     <div class="col-lg-5">
+                        <div class="input-group y-headm">
+                           <span class="input-group-btn">
+                           <button class="btn btn-default y-header-br" type="Search"><i class="glyphicon glyphicon-search"></i></button>
+                           </span>
+                           <input type="text" class="form-control y-header-bl y-hborder" placeholder="Search Faq" id="srch-term">
+                        </div>
+                        <!-- /input-group -->				
+                     </div>
+                     <div class="col-lg-2">
+                        <ul class="nav navbar-top-links navbar-right">
+                           <li>
+                              <a href="login.html">
+                              <i class="glyphicon glyphicon-off" style="color:#016f52"></i> Log out
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+            <!-- Header ENDS --> 
+            <!-- Wrapper STARTS -->
+            <div class="wrapper wrapper-content">
+               <!-- Column 1 - LEFT STARTS -->
+              <div class="col-lg-8">
+            <div class="row">
+                <div class="col-lg-12">
+					<h1 class="y-wrapcolor"> My Plan </h1>
+								
+                   <!-- <h1>Application for Unmanned Aircraft Permits</h1> -->
+                   <div class="wizard">    
+							<div class="panel panel-default">
+                                             <div class="panel-heading" role="tab" id="headerOne">
+                                                <h3>
+                                                        Cancellation Request
+                                                </h3>
+												
+                                            </div> 
+                                                <div class="panel-body">				   
+                        <ul class="nav nav-wizard no-counter">
+                            <li class="active">
+                                <a href="#step1" data-toggle="tab" aria-expanded="false">1. Cancellation Request</a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#step2" data-toggle="tab" aria-expanded="true">2. Confirmation </a>
+                            </li>             
+                        </ul>                
+                        <div class="tab-content">
+							<!--Step1 Starts here-->
+                            <div class="tab-pane active" id="step1">
+                                <div class="inner_tab_pane">
+                                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                                         <div class="panel panel-default">
+                                             <!-- <div class="panel-heading" role="tab" id="headerOne">
+                                                <h4 class="panel-title">
+                                                        Change Billing Address
+                                                </h4>
+                                            </div>  -->
+                                                <div class="panel-body">
+									<div class="row">
+                                                   <div class="col-lg-10">
+                                                      <p class="m-b-md">Cancellation of services is done through our service channels. You may request that a representative contact you to fulfill your request.</p>
+													  <div class="alert alert-danger">
+                                <b>Important:</b>  This request does not indicate termination of service. Wait for confirmation with the service
+                            </div>
+                                                      <div class="form-group">
+                                                         <label for="zip">Select the service you want to cancel:</label>
+                                                         <select class="form-control">
+                                                            <option>Select</option>
+                                                            <option>All Services</option>
+                                                            <option>Free Pass</option>
+                                                            <option>Free Zone</option>
+                                                            <option>Rollover</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                    </div>
+                                        </div>   
+										</div>
+                                </div>
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn prev-btn btn-outline btn-link">BACK</button></li>
+                                   <li><button type="button" class="btn btn-primary btn-outline btn-rounded y-btn" data-toggle="modal" data-target="#y-confirmModal">CONFIRM</button></li>
+                                </ul>
+								 <!-- Modal -->
+                                 <div class="modal fade" id="y-confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                       <div class="modal-content">
+                                          <div class="ibox float-e-margins">
+                                             <div class="ibox-title bs no-borders">
+                                                <button type="button" data-dismiss="modal" class="close" aria-hidden="true">&times;</button>
+                                                <h5 class="y-wrapseccolor">Attention</h5>
+                                             </div>
+                                             <div class="ibox-content">
+                                                <div class="m-sm">
+                                                  <center><p>The amount of the fine today, for cancellation of <product / service name>, is $ 900.00.
+
+</p><h3>Do you wish to continue?</h3><ul class="list-inline">
+                                    <li><button type="button" class="btn btn-outline btn-link" data-dismiss="modal">NO</button></li>
+                                   <li><button type="button" class="btn btn-primary next-btn btn-outline btn-rounded y-btn">YES</button></li>
+                                </ul><center>
+												</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                            </div>
+							<!--Step1 Ends here-->
+							
+							<!--Step2 Starts here-->
+                            <div class="tab-pane" id="step2">
+                                <div class="inner_tab_pane">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <h3>Your request was successful. We will contact a deadline
+
+up to XX hours from this request.</h3>
+                                            </div>
+                                        </div>
+										<div class="col-lg-12">
+                                                   <div class="alert alert-info">
+                                                      
+												Your request generated a protocol number will be available in the service area <br><b>Protocol: 99999</b><img src="images/shape.png" class="m-l-sm">
+                                                   </div>
+                                                </div>
+										<div class="col-lg-12">
+										<div class="alert alert-danger">
+                                <b>Important:</b>
+  This request does not indicate the cancellation of the service, wait for confirmation with the service.  This change will be valid for your next billing cycle.
+                            </div>
+							 <h3>Soon we will contact you to schedule the removal of the equipment.</div></h3>
+                                        <br>
+                                        <ul class="list-inline pull-right">
+
+                                   <li><button type="button" class="btn btn-primary btn-outline btn-rounded finish-btn y-btn">FINISH</button></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+							<!--Step2 Ends here-->
+							
+							
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    </div>
+							</div>
+							</div>
+                </div>
+            </div>
+               <!-- Column 1 - LEFT ENDS -->
+               <!-- Column 2 - RIGHT STARTS -->
+               <div class="col-lg-4">
+                  <div class="col-lg-12">
+                     <div class="ibox float-e-margins y-wrap-img">
+                        <img alt="image" class="" style="" src="images/bannerright.png" />
+                     </div>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="ibox float-e-margins y-sp">
+                        <div class="ibox-title no-borders">
+                           <h3>Speed Test</h3>
+                        </div>
+                        <div class="ibox-content">
+                           <p class="y-black">Check if everything is right with the speed of access of your internet</p>
+                           <a class="btn btn-primary btn-rounded btn-block btn-active ibox y-btn" href="#">Test</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="ibox float-e-margins">
+                        <div class="ibox-content no-padding y-sc-list">
+                           <div class="forum-title">
+                              <h3>Service Channels</h3>
+                           </div>
+                           <div class="forum-item active">
+                              <div class="row">
+                                 <div class="col-lg-12">
+                                    <a href="forum_post.html">
+                                       <div class="forum-icon">
+                                          <img src="images/chat.png">
+                                       </div>
+                                       <div class="forum-item-title">Chat</div>
+                                       <div class="forum-sub-title">Contact support</div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="forum-item active y-sc1">
+                              <div class="row">
+                                 <div class="col-lg-12">
+                                    <a href="forum_post.html">
+                                       <div class="forum-icon">
+                                          <img src="images/email.png">
+                                       </div>
+                                       <div class="forum-item-title">Email</div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="forum-item active">
+                              <div class="row">
+                                 <div class="col-lg-12">
+                                    <a href="forum_post.html" >
+                                       <div class="forum-icon">
+                                          <img src="images/phone.png">
+                                       </div>
+                                       <div class="forum-item-title">We call you</div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="forum-item active y-sc1">
+                              <div class="row">
+                                 <div class="col-lg-12">
+                                    <a href="forum_post.html">
+                                       <div class="forum-icon">
+                                          <img src="images/cc.png">
+                                       </div>
+                                       <div class="forum-item-title">Yah Center</div>
+                                       <div class="forum-sub-title">Service 24hrs / 7 days a week.</div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="ibox float-e-margins y-wrap-img">
+                        <img alt="image" class="" style="" src="images/survey.png" />
+                     </div>
+                  </div>
+               </div>
+               <!-- Column 2 - RIGHT ENDS -->
+               <div class="row">
+               </div>               
+            </div>
+            <!-- Wrapper ENDS -->
+            <!-- FOOTER STARTS -->
+            <div class="footer">
+               <div class="y-footer1">
+                  <a href="#" title="yahsatlogo" img alt="image" class="y-navimage">
+                  <img src="images/yahsatlogo.png">
+                  </a>
+               </div>
+               <div class="col-lg-12 y-footer2">
+                  <div class="col-md-2">
+                     <fieldset class="y-footer2-h">
+                        <h3> <a href="Home.html">Home</a> </h3>
+                        <h3> <a href="MyConsumption.html">My Consumption</a></h3>
+                        <h3> <a href="MyPlan.html">My Plan</a></h3>
+                        <h3> <a href="MyCadastre.html">My Cadastre</a></h3>
+                     </fieldset>
+                  </div>
+                  <div class="col-md-2">
+                     <fieldset class="y-footer2-h">
+                        <h3> <a href="MyInvoices.html">My Invoices</a> </h3>
+                        <h4> <a href="#">Billing address</a> </h4>
+                        <h4> <a href="#">Digital invoice</a> </h4>
+                        <h4> <a href="#">Due date</a> </h4>
+                        <h4> <a href="#">Form of payment</a> </h4>
+                        <h4> <a href="#">Discharge term</a> </h4>
+                     </fieldset>
+                  </div>
+                  <div class="col-md-2">
+                     <fieldset class="y-footer2-h">
+                        <h3> <a href="Attendance.html">Attendance</a></h3>
+                        <h4> <a href="#">Contact us</a></h4>
+                        <h4> <a href="#">Change Wi-Fi password</a></h4>
+                        <h4> <a href="#">Technical visits</a></h4>
+                        <h4> <a href="#">Technical support</a></h4>
+                        <h4> <a href="#">Recordings</a></h4>
+                     </fieldset>
+                  </div>
+                  <div class="col-md-2">
+                     <fieldset class="y-footer2-h4" style="margin-top:32px;">
+                        <h3>Service Channels</h3>
+                        <div class="y-footer2-h4-m">
+                           <a href="#" title="chat" img alt="image" class="y-navimage">
+                           <img src="images/chat.png">
+						   <ul class="y-sc">
+                              <li>Chat</li>
+                              <li style="color:#a4a8af;font-size:14px;font-weight:normal;">Contact Support</li>
+                           </ul>
+                           </a>                           
+                           </div>				
+                           <div class="y-footer2-h4-m">
+                              <a href="#" title="chat" img alt="image" class="y-navimage">
+                              <img src="images/phone.png"><h3>We call you</h3>
+                              </a>                              
+                           </div>                    
+                     </div>
+					  </fieldset>
+                     <div class="col-md-2" style="margin-top:32px;">
+                        <fieldset class="y-footer2-h4">
+                           <br>
+                           <div class="y-footer2-h4-m">
+                              <a href="#" title="chat" img alt="image" class="y-navimage">
+                              <img src="images/email.png"><h3>E-mail</h3>
+                              </a>                              
+                           </div>
+                           <div class="y-footer2-h4-m">
+                              <a href="#" title="chat" img alt="image" class="y-navimage">
+                              <img src="images/cc.png">
+							  <ul class="y-sc">
+                                 <li style="color:#a4a8af;font-size:14px;font-weight:normal;">Yah Center</li>
+                                 <li>0800-000-0000</li>
+                              </ul>
+                              </a>                              
+                           </div>
+                        </fieldset>
+                     </div>
+                     <div class="col-md-2" style="margin-top:35px;">
+                        <fieldset class="y-footer2-h4">
+                           <div>
+                              <a href="https://youtube.com" title="chat" img alt="image" class="y-navimage">
+                              <img src="images/youtube.png">
+							  <h4 class="y-footer2-h4-sm">Youtube
+                              </h4>
+                              </a>
+                              
+                           </div>
+                           <div class="socialm">
+                              <a href="https://facebook.com" title="chat" img alt="image" class="y-navimage">
+                              <img src="images/facebook.png">
+							  <h4 class="y-footer2-h4-sm">Facebook
+                              </h4>
+                              </a>
+                              
+                           </div>
+                           <div class="socialm">
+                              <a href="https://twitter.com" title="chat" img alt="image" class="y-navimage">
+                              <img src="images/twitter.png">
+							  <h4 class="y-footer2-h4-sm">Twitter
+                              </h4>
+                              </a>
+                              
+                           </div>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="y-footer3">
+                     <div class="">
+                        © YAl Yah Satellite Communication Company PJSC (Yahsat), A Mubadala Company.
+                     </div>
+                     <div class="">
+                        www.yahsat.com
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- FOOTER ENDS -->
+      </div>
+      <!-- Mainly scripts -->
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+      <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+      <!-- Flot -->
+      <script src="js/plugins/flot/jquery.flot.js"></script>
+      <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+      <script src="js/plugins/flot/jquery.flot.spline.js"></script>
+      <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+      <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+      <script src="js/plugins/flot/jquery.flot.symbol.js"></script>
+      <script src="js/plugins/flot/curvedLines.js"></script>
+      <!-- Peity -->
+      <script src="js/plugins/peity/jquery.peity.min.js"></script>
+      <script src="js/demo/peity-demo.js"></script>
+      <!-- Custom and plugin javascript -->
+      <script src="js/inspinia.js"></script>
+      <script src="js/plugins/pace/pace.min.js"></script>
+      <!-- jQuery UI -->
+      <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+      <!-- Jvectormap -->
+      <script src="js/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+      <script src="js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+      <!-- Sparkline -->
+      <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+      <!-- Sparkline demo data  -->
+      <script src="js/demo/sparkline-demo.js"></script>
+      <!-- ChartJS-->
+      <script src="js/plugins/chartJs/Chart.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+          $(document).ready(function () {
+  
+    //Wizard
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+        var $target = $(e.target);    
+        if ($target.parent().hasClass('disabled')) {
+            return false;
+        }
+    });
+
+    $(".prev-btn").click(function (e) {
+         window.history.back();
+     });
+
+    $(".next-btn").click(function (e) {
+	$("html").find(".pace-done").removeClass("modal-open");
+	$("html").find(".pace-done").css("padding-right","0");
+	$(".modal-backdrop.fade.in").css("display", "none");
+        var $active = $('.wizard .nav-wizard li.active');
+        $active.next().removeClass('disabled');
+        nextTab($active);
+    });
+	$(".finish-btn").click(function (e) {
+        window.location.href = "MyPlan.html";
+			return false;
+    });
+});
+
+function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+}
+
+function prevTab(elem) {
+	$(elem).prev().find('a[data-toggle="tab"]').click();
+}
+      </script>
+   </body>
+</html>

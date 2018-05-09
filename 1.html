@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | Wizards</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/yahsat-style.css" rel="stylesheet">
+	<!-- <link href="css/custom.css" rel="stylesheet"> -->
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="y-nav-header nav-header" style="text-align:center;">
+                     <div class="dropdown profile-element">
+                        <span>
+                        <img alt="image" class="img-circle" style="background-color:#ffffff;" src="images/logo.png" />
+                        </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                        </span> <span style="color:#a4c3b7" class="text-muted text-xs block">Rio de Janeiro - RJ</span> </span> </a>
+                     </div>
+                     <div class="logo-element">
+                        IN+
+                     </div>
+                  </li>
+				<li>
+                     <a href="Home.html"><i class="glyphicon glyphicon-home"></i> <span class="nav-label">Home</span></a>
+                  </li>
+                <li class="active">
+                     <a href="MyInvoices.html"><i class="glyphicon glyphicon-usd"></i> <span class="nav-label">My Invoices</span> <span class="fa arrow"></span></a>
+                      <ul class="nav nav-second-level collapse">
+                        <li class="active"><a href="BillingAddress.html">Billing address</a></li>
+                        <li><a href="DigitalInvoice.html">Digital invoice</a></li>
+                        <li><a href="DueDate.html">Due date</a></li>
+                        <li><a href="FormOfPayment.html">Form of payment</a></li>
+                        <li><a href="DischargeTerm.html">Discharge term</a></li>
+                     </ul>
+                  </li>
+                <li>
+                     <a href="MyPlan.html"><i class="fa fa-file-text-o"></i> <span class="nav-label">My Plan</span>  </a>
+                  </li>
+                  <li>
+                     <a href="MyCadastre.html"><i class="glyphicon glyphicon-user"></i> <span class="nav-label">My Cadastre</span></a>
+                  </li>
+                  <li>
+                     <a href="MyConsumption.html"><i class="glyphicon glyphicon-stats"></i> <span class="nav-label">My Consumption</span></a>
+                  </li>
+                  <li>
+                     <a href="Attendance.html"><i class="glyphicon glyphicon-headphones"></i> <span class="nav-label">Attendance</span><span class="fa arrow"></span></a>
+                     <ul class="nav nav-second-level collapse">
+                        <li><a href="ContactUs.html">Contact us</a></li>
+                        <li><a href="ProtocolHistory.html">Protocol history</a></li>
+                        <li><a href="ChangeWifiPW.html">Change Wi-Fi Password</a></li>
+                        <li><a href="TechnicalVisits.html">Technical vists</a></li>
+                        <li><a href="TechnicalSupport.html">Technical support</a></li>
+                        <li><a href="Recordings.html">Recordings</a></li>
+                     </ul>
+                  </li>
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+         <nav class="navbar navbar-static-top gray-bg" role="navigation" style="margin-bottom: 0">
+                  <div class="col-lg-12 navbar-header">
+                     <div class="col-lg-5">
+                        <!-- <label for="sel1">Your installation address</label> -->
+                        <select class="form-control y-headm" id="sel1">
+                           <option>Your installation address</option>
+                           <option>Rua dos Cafezais, 420 apto 242 - 1</option>
+                           <option>Rua dos Cafezais, 420 apto 242 - 2</option>
+                           <option>Rua dos Cafezais, 420 apto 242 - 3</option>
+                        </select>
+                     </div>
+                     <div class="col-lg-5">
+                        <div class="input-group y-headm">
+                           <span class="input-group-btn">
+                           <button class="btn btn-default y-header-br" type="Search"><i class="glyphicon glyphicon-search"></i></button>
+                           </span>
+                           <input type="text" class="form-control y-header-bl y-hborder" placeholder="Search Faq">
+                        </div>
+                        <!-- /input-group -->				
+                     </div>
+                     <div class="col-lg-2">
+                        <ul class="nav navbar-top-links navbar-right">
+                           <li>
+                              <a href="login.html">
+                              <i class="glyphicon glyphicon-off" style="color:#016f52"></i> Log out
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </nav>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+		<div class="col-lg-8">
+            <div class="row">
+                <div class="col-lg-12">
+					<h1 class="y-wrapcolor"> Billing Adddress </h1>
+							
+								<div class="ibox float-e-margins y-billing">              
+									<div class="ibox-content p-xl y-nh">
+									 
+										<div class="row">
+											
+											<div class="col-sm-6 bor-right">
+												<h3 class="y-date">Location of installation</h3>
+												<address>
+													Rua dos Cafezais, 420 - apt 242<br>
+													Vila Santa Catarina<br>
+													Sao Paulo-SP<br>
+													<abbr title="Phone">CEP:</abbr> 04364-000
+												</address>
+											</div>
+											<div class="col-sm-6">
+												<h3 class="y-date">Billing address</h3>
+												<address>
+													Rua dos Cafezais, 420 - apt 242<br>
+													Vila Santa Catarina<br>
+													Sao Paulo-SP<br>
+													<abbr title="Phone">CEP:</abbr> 04364-000
+												</address>
+												<button type="button" id="y-change" class="btn btn-primary btn-rounded btn-outline" data-toggle="modal" data-target="#myModal" data-title="Change Address">CHANGE ADDRESS</button>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								
+                   <!-- <h1>Application for Unmanned Aircraft Permits</h1> -->
+                   <div class="wizard" style="display: none;">            
+                        <ul class="nav nav-wizard no-counter">
+                            <li class="active">
+                                <a href="#step1" data-toggle="tab" aria-expanded="false">1. Address</a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#step2" data-toggle="tab" aria-expanded="true">2. Confirmation </a>
+                            </li>             
+                        </ul>                
+                        <div class="tab-content">
+							<!--Step1 Starts here-->
+                            <div class="tab-pane active" id="step1">
+                                <div class="inner_tab_pane">
+                                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                                         <div class="panel panel-default">
+                                            <!-- <div class="panel-heading" role="tab" id="headerOne">
+                                                <h4 class="panel-title">
+                                                        Address
+                                                </h4>
+                                            </div> -->
+                                            <div class="panel-collapse collapse in" role="tabpanel">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="form-group">
+                                                 <label for="zip">Enter the zip code of your new address *</label>
+                                                <input id="zip" type="text" class="form-control required">
+                                            </div>
+										</div>
+										<div class="col-lg-4 m-t-lg">
+                                            <div class="form-group">
+                                                <a href="#">I do not know the zip code.</a>
+                                            </div>
+											</div>
+											<div class="col-lg-8">
+                                            <div class="form-group">
+                                               <label for="address">Address *</label>
+                                                <input type="text" class="form-control" id="address">
+                                            </div>
+										</div>
+										<div class="col-lg-4">
+                                            <div class="form-group">
+                                               <label for="number">Number *</label>
+                                                <input type="text" class="form-control" id="number">
+                                            </div>
+										</div>
+										<div class="col-lg-4">
+                                            <div class="form-group">
+                                               <label for="complement">Complement</label>
+                                                <input type="text" class="form-control" id="complement">
+                                            </div>
+										</div>
+										<div class="col-lg-8">
+                                            <div class="form-group">
+                                               <label for="neighborhood">Neighborhood *</label>
+                                                <input type="text" class="form-control" id="neighborhood">
+                                            </div>
+										</div>
+                                           <div class="col-lg-8">
+                                            <div class="form-group">
+                                               <label for="city">City *</label>
+                                                <input type="text" class="form-control" id="city">
+                                            </div>
+										</div>
+										<div class="col-lg-4">
+                                            <div class="form-group">
+                                               <label for="uf">UF *</label>
+                                                <input type="text" class="form-control" id="uf">
+                                            </div>
+										</div>
+										<div class="col-lg-12">
+										<div class="alert alert-info">
+                                <b>Attention:</b> Depending on the date your invoice expires, the change of address will only take effect on the next invoice or immediately following invoice.
+                            </div></div>
+                                    </div>
+                                    </div>
+                                            </div>
+                                        </div>   
+										</div>
+                                </div>
+                                <hr>
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn btn-primary prev-btn">Back</button></li>
+                                   <li><button type="button" class="btn btn-primary next-btn">Confirm</button></li>
+                                </ul>
+                            </div>
+							<!--Step1 Ends here-->
+							
+							<!--Step2 Starts here-->
+                            <div class="tab-pane" id="step2">
+                                <div class="inner_tab_pane">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <h3>Your address has been updated.</h3>
+                                            </div>
+                                        </div>
+										<div class="col-lg-12">
+										<div class="alert alert-info">
+                                <b>Attention:</b> Depending on the date your invoice expires, the change of address will only take effect on the next invoice or immediately following invoice.
+                            </div></div>
+                                        <br>
+                                        <ul class="list-inline pull-right">
+
+                                    <li><button type="button" class="btn btn-primary prev-btn">Back</button></li>
+                                   <li><button type="button" class="btn btn-primary finish-btn">Finish</button></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+							<!--Step2 Ends here-->
+							
+							
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+			</div>
+       <div class="col-lg-4">
+                  <div class="col-lg-12">
+                     <div class="ibox float-e-margins y-wrap-img">
+                        <img alt="image" class="" style="" src="images/bannerright.png" />
+                     </div>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="ibox float-e-margins y-sp">
+                        <div class="ibox-title no-borders">
+                           <h3>Speed Test</h3>
+                        </div>
+                        <div class="ibox-content y-nh">
+                           <p class="y-black">Check if everything is right with the speed of access of your internet</p>
+                           <a class="btn btn-primary btn-rounded btn-block btn-active ibox" href="#">Test</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="ibox float-e-margins">
+                        <div class="ibox-content no-padding y-sc-list">
+                           <div class="forum-title">
+                              <h3>Service Channels</h3>
+                           </div>
+                           <div class="forum-item active">
+                              <div class="row">
+                                 <div class="col-lg-12">
+                                    <a href="forum_post.html">
+                                       <div class="forum-icon">
+                                          <img src="images/chat.png">
+                                       </div>
+                                       <div class="forum-item-title">Chat</div>
+                                       <div class="forum-sub-title">Contact support</div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="forum-item active y-sc1">
+                              <div class="row">
+                                 <div class="col-lg-12">
+                                    <a href="forum_post.html">
+                                       <div class="forum-icon">
+                                          <img src="images/email.png">
+                                       </div>
+                                       <div class="forum-item-title">Email</div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="forum-item active">
+                              <div class="row">
+                                 <div class="col-lg-12">
+                                    <a href="forum_post.html" >
+                                       <div class="forum-icon">
+                                          <img src="images/phone.png">
+                                       </div>
+                                       <div class="forum-item-title">We call you</div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="forum-item active y-sc1">
+                              <div class="row">
+                                 <div class="col-lg-12">
+                                    <a href="forum_post.html">
+                                       <div class="forum-icon">
+                                          <img src="images/cc.png">
+                                       </div>
+                                       <div class="forum-item-title">Yah Center</div>
+                                       <div class="forum-sub-title">Service 24hrs / 7 days a week.</div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="ibox float-e-margins y-wrap-img">
+                        <img alt="image" class="" style="" src="images/survey.png" />
+                     </div>
+                  </div>
+               </div>
+               <!-- Column 2 - RIGHT ENDS -->
+               <div class="row">
+               </div>
+               <!-- CHAT STARTS -->
+               <div class="small-chat-box fadeInRight animated">
+                  <div class="heading" draggable="true">
+                     <small class="chat-date pull-right">
+                     02.19.2015
+                     </small>
+                     Yahsat chat
+                  </div>
+                  <div class="content">
+                     <div class="left">
+                        <div class="author-name">
+                           Monica Jackson <small class="chat-date">
+                           10:02 am
+                           </small>
+                        </div>
+                        <div class="chat-message active">
+                           Lorem Ipsum is simply dummy text input.
+                        </div>
+                     </div>
+                     <div class="right">
+                        <div class="author-name">
+                           Mick Smith
+                           <small class="chat-date">
+                           11:24 am
+                           </small>
+                        </div>
+                        <div class="chat-message">
+                           Lorem Ipsum is simpl.
+                        </div>
+                     </div>
+                     <div class="left">
+                        <div class="author-name">
+                           Alice Novak
+                           <small class="chat-date">
+                           08:45 pm
+                           </small>
+                        </div>
+                        <div class="chat-message active">
+                           Check this stock char.
+                        </div>
+                     </div>
+                     <div class="right">
+                        <div class="author-name">
+                           Anna Lamson
+                           <small class="chat-date">
+                           11:24 am
+                           </small>
+                        </div>
+                        <div class="chat-message">
+                           The standard chunk of Lorem Ipsum
+                        </div>
+                     </div>
+                     <div class="left">
+                        <div class="author-name">
+                           Mick Lane
+                           <small class="chat-date">
+                           08:45 pm
+                           </small>
+                        </div>
+                        <div class="chat-message active">
+                           I belive that. Lorem Ipsum is simply dummy text.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-chat">
+                     <div class="input-group input-group-sm"><input type="text" class="form-control"> <span class="input-group-btn"> <button
+                        class="btn btn-primary" type="button">Send
+                        </button> </span>
+                     </div>
+                  </div>
+            
+               <div id="small-chat">
+                  <span class="badge badge-warning pull-right">5</span>
+                  <a class="open-small-chat">
+                  <i class="fa fa-comments"></i>
+                  </a>
+               </div>
+               <!-- CHAT ENDS -->
+            </div>
+            <!-- Wrapper ENDS -->
+            <!-- FOOTER STARTS -->
+             <div class="footer">
+               <div class="y-footer1">
+                  <a href="#" title="yahsatlogo" img alt="image" class="y-navimage">
+                  <img src="images/yahsatlogo.png">
+                  </a>
+               </div>
+               <div class="col-lg-12 y-footer2">
+                  <div class="col-md-2">
+                     <fieldset class="y-footer2-h">
+                        <h3> <a href="Home.html">Home</a> </h3>
+                        <h3> <a href="MyConsumption.html">My Consumption</a></h3>
+                        <h3> <a href="MyPlan.html">My Plan</a></h3>
+                        <h3> <a href="MyCadastre.html">My Cadastre</a></h3>
+                     </fieldset>
+                  </div>
+                  <div class="col-md-2">
+                     <fieldset class="y-footer2-h">
+                        <h3> <a href="MyInvoices.html">My Invoices</a> </h3>
+                        <h4> <a href="#">Billing address</a> </h4>
+                        <h4> <a href="#">Digital invoice</a> </h4>
+                        <h4> <a href="#">Due date</a> </h4>
+                        <h4> <a href="#">Form of payment</a> </h4>
+                        <h4> <a href="#">Discharge term</a> </h4>
+                     </fieldset>
+                  </div>
+                  <div class="col-md-2">
+                     <fieldset class="y-footer2-h">
+                        <h3> <a href="Attendance.html">Attendance</a></h3>
+                        <h4> <a href="#">Contact us</a></h4>
+                        <h4> <a href="#">Change Wi-Fi password</a></h4>
+                        <h4> <a href="#">Technical visits</a></h4>
+                        <h4> <a href="#">Technical support</a></h4>
+                        <h4> <a href="#">Recordings</a></h4>
+                     </fieldset>
+                  </div>
+                  <div class="col-md-2">
+                     <fieldset class="y-footer2-h4" style="margin-top:32px;">
+                        <h3>Service Channels</h3>
+                        <div class="y-footer2-h4-m">
+                           <a href="#" title="Chat" img alt="image" class="y-navimage">
+                           <img src="images/chat.png">
+						   <ul class="y-sc">
+                              <li>Chat</li>
+                              <li style="color:#a4a8af;font-size:14px;font-weight:normal;">Contact Support</li>
+                           </ul>
+                           </a>                           
+                           </div>				
+                           <div class="y-footer2-h4-m">
+                              <a href="#" title="We call you" img alt="image" class="y-navimage">
+                              <img src="images/phone.png"><h3>We call you</h3>
+                              </a>                              
+                           </div>                    
+                     </div>
+					  </fieldset>
+                     <div class="col-md-2" style="margin-top:32px;">
+                        <fieldset class="y-footer2-h4">
+                           <br>
+                           <div class="y-footer2-h4-m">
+                              <a href="#" title="E-mail" img alt="image" class="y-navimage">
+                              <img src="images/email.png"><h3>E-mail</h3>
+                              </a>                              
+                           </div>
+                           <div class="y-footer2-h4-m">
+                              <a href="#" title="Yah Center" img alt="image" class="y-navimage">
+                              <img src="images/cc.png">
+							  <ul class="y-sc">
+                                 <li style="color:#a4a8af;font-size:14px;font-weight:normal;">Yah Center</li>
+                                 <li>0800-000-0000</li>
+                              </ul>
+                              </a>                              
+                           </div>
+                        </fieldset>
+                     </div>
+                     <div class="col-md-2" style="margin-top:35px;">
+                        <fieldset class="y-footer2-h4">
+                           <div>
+                              <a href="https://youtube.com" title="Youtube" img alt="image" class="y-navimage">
+                              <img src="images/youtube.png">
+							  <h4 class="y-footer2-h4-sm">Youtube
+                              </h4>
+                              </a>
+                              
+                           </div>
+                           <div class="socialm">
+                              <a href="https://facebook.com" title="Facebook" img alt="image" class="y-navimage">
+                              <img src="images/facebook.png">
+							  <h4 class="y-footer2-h4-sm">Facebook
+                              </h4>
+                              </a>
+                              
+                           </div>
+                           <div class="socialm">
+                              <a href="https://twitter.com" title="Twitter" img alt="image" class="y-navimage">
+                              <img src="images/twitter.png">
+							  <h4 class="y-footer2-h4-sm">Twitter
+                              </h4>
+                              </a>
+                              
+                           </div>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="y-footer3">
+                     <div class="">
+                        © YAl Yah Satellite Communication Company PJSC (Yahsat), A Mubadala Company.
+                     </div>
+                     <div class="">
+                        www.yahsat.com
+                     </div>
+                  </div>
+            </div>
+            <!-- FOOTER ENDS -->
+      </div>
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+
+    <script>
+		
+        
+			$('#y-change').click(function(){
+			$( "div.y-billing" ).replaceWith( $( ".wizard" ) );
+			$(".wizard").css("display", "block");
+		});
+       $(document).ready(function () {
+  
+    //Wizard
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+        var $target = $(e.target);    
+        if ($target.parent().hasClass('disabled')) {
+            return false;
+        }
+    });
+
+    $(".prev-btn").click(function (e) {
+         var $active = $('.wizard .nav-wizard li.active');
+        $active.next().removeClass('active');
+        //$active.removeClass('visited');
+        prevTab($active);
+     });
+
+    $(".next-btn").click(function (e) {
+        var $active = $('.wizard .nav-wizard li.active');
+        $active.next().removeClass('disabled');
+        //$active.addClass('visited');
+        nextTab($active);
+    });
+	$(".finish-btn").click(function (e) {
+        location.reload();
+    });
+});
+
+function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+}
+
+function prevTab(elem) {
+	$(elem).prev().find('a[data-toggle="tab"]').click();
+}
+
+
+$(".editLocationInput").hide();
+$("#editLocation,#editLocation1").click(function(){
+    $(".editLocationInput").toggle();
+});
+
+function toggleIcon(e) {
+$(e.target)
+    .prev('.panel-heading')
+    .find(".more-less")
+    .toggleClass('glyphicon-plus glyphicon-minus');
+}
+$('.panel-group').on('hidden.bs.collapse', toggleIcon);
+$('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+$(document).ready(function () {
+$(function () {
+	$(".reset").bind("click", function () {
+		if($('body').hasClass('reset')){			
+		}else{				
+			$('body').removeClass('reset');
+			$('body').removeClass('minus');
+			$('body').removeClass('plus');
+		}			
+	});
+	$(".minus").bind("click", function () {
+			if($('body').hasClass('minus')){			
+		}else{				
+			$('body').addClass('minus');
+			$('body').removeClass('reset');
+			$('body').removeClass('plus');
+		}
+		
+	});
+	$(".plus").bind("click", function () {	
+		if($('body').hasClass('plus')){
+		
+		}else{				
+			$('body').addClass('plus');
+			$('body').removeClass('minus');
+			$('body').removeClass('reset');
+		}
+	});
+});
+});
+$("#theSelect").change(function(){          
+    var value = $("#theSelect option:selected").val();
+    var theDiv = $(".is" + value);
+    
+    theDiv.slideDown().removeClass("hidden");
+    theDiv.siblings('[class*=is]').slideUp(function() { $(this).addClass("hidden")});
+});
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+
+$(function() {
+    $('.hiddenOption').hide();
+    $('#theSelect').change(function(){
+      $('#' + $(this).val()).show();
+    });
+});
+// $(document).ready(function() {
+// $(".desc").hide();
+    // $("input[name='apply-new']").click(function() {
+        // var sectionValue = $(this).val();
+        // $("div.desc").hide();
+        // var sectionBlock = $("#new_appln" + sectionValue).show();
+		// alert(sectionBlock);
+    // });
+// });
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"-->
+  <link rel="stylesheet" type="text/css" href="modal1.css">
+  <link rel="stylesheet" type="text/css" href="grid.css">
+  <link rel="stylesheet" type="text/css" href="modal2.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script--> 
+
+<style>
+</style>
+</head>
+<body>
+
+<!-- Trigger/Open The Modal -->
+<div id="myBtn">November</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+  <div class="grid-container">
+  <!--div class="modal1-header"-->
+    <div class="item1">
+    <span class="close">&times;</span>
+<pre>Installation Address: Rua dos Cafezais, 420 - apt 242                 Month: November 2017 </pre>
+	</div>
+	<!--hr color="#9f9f9f"> <br-->
+	<div class="item2">
+    <!-- <iframe src="http://www.pdf995.com/samples/pdf.pdf"   name="iframea" height=390 width=500></iframe> -->
+	<iframe src="http://www.princexml.com/samples/invoice/invoicesample.pdf"   name="iframea" height=390 width=500></iframe>
+	</div>
+<!--div id=1 class="row"-->
+<div class="item4">
+<form action="invoice.php" method="post">
+<button id="myBtn4" formtarget="_parent">Understand your invoice </button>
+</form>
+</div>
+<!--hr>
+<div id=2 class="row">
+<hr-->
+<div class="item3">
+<form name="myForm" onsubmit="return myFunctionS();" method="post">
+<p>Send by email:</p>
+  <input type="radio" name="radio1" value="first_email" onClick="myFunction()"> Send to my email address:<br>Firstname.samename@provider.com<br><br>
+  <input type="radio" name="radio1" value="other" onClick="myFunction2()">  I want to send to another email address:<br>
+  <input type="email" id="myEmail" name="email"><br><br>
+ <input type="submit" id="myBtn2" value="Submit">
+<!--button id="myBtn2">Submit</button-->
+</form>
+ </div>
+ <!--hr>
+ <div id=3 class="row"-->
+ <div class="item5">
+ <p>Archive</p>
+ <a href="#" class="btn btn-success btn-lg" onclick="myFunctionP()">
+      <span class="glyphicon glyphicon-print"></span> Print </a>
+	  <!--a href="#","http://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf" class="btn btn-info btn-lg" download-->
+	   <!-- <a href="http://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"  class="btn btn-info btn-lg" download> -->
+	     <a href="http://www.princexml.com/samples/invoice/invoicesample.pdf"  class="btn btn-info btn-lg" download>
+          <span class="glyphicon glyphicon-download-alt"></span> Download
+        </a>
+      </p>  	<!--p> <a href="Test.pdf" target="iframea">IFrame</a></p>
+<a href="Test.pdf" download="TestPDF">CLICK HERE TO DOWNLOAD PDF
+ </a-->
+		<!--i class="fa fa-file-pdf-o">
+	<button style="font-size:20px">Download PDF</i></button-->  
+	
+  </div>
+  
+  </div>
+  </div>
+ <div id="mymodal2" class="modal2">
+
+  <!-- modal2 content -->
+  <div class="modal2-content">
+    <div class="modal2-header">
+      <span class="close2">&times;</span>
+      <h2>Issue 2 via</h2>
+    </div>
+    <div class="modal2-body">
+      <p>Your request was successful. The invoice will be sent to the registered e-mail address.</p><br><br>
+      <p>Your request has generated a protocol number and will be available in the service area</p>
+    </div>
+    <div class="modal2-footer">
+    <p>If you do not receive the message, check your SPAM box as it may have been misclassified</p>
+     <button id="myBtn3">Finish</button>
+    </div>
+  </div>
+
+</div>
+  </div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+var modal2 = document.getElementById('mymodal2');
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+var btn2 = document.getElementById("myBtn2");
+var btn3 = document.getElementById("myBtn3");
+var btn4 = document.getElementById("myBtn4");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+btn3.onclick = function() {
+    modal2.style.display = "none";
+}
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+span2.onclick = function() {
+    modal.style.display = "none";
+}
+
+function myFunction() {
+document.getElementById("myEmail").disabled = true;
+}
+ 
+function myFunction2() {
+ document.getElementById("myEmail").disabled = false;
+}
+function myFunctionS() {
+ var x = document.forms["myForm"]["email"].value;
+ if (x == "") {
+        alert("Enter email ID");
+        return false;
+    }
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+		        return false;
+    }
+}
+function myFunctionP() {
+    window.print();
+}
+ 
+// When the user clicks anywhere outside of the modal, close it
+/* code not working
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}*/
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
+
+
